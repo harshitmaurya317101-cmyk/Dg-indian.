@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="DG India helps businesses go digital with websites, mobile apps, Google SEO, Google Ads and quick-order solutions.">
+<title>DG India | Digital Solutions for Growing Businesses</title>
+<style>
+:root{--navy:#071638;--blue:#1264f3;--cyan:#21d4fd;--yellow:#ffd21e;--ink:#111b35;--muted:#5c6680;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#f5f8ff}
+a{text-decoration:none;color:inherit}.container{width:min(1140px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#071638f2;color:white;backdrop-filter:blur(10px);border-bottom:1px solid #ffffff20}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:15px}.brand{font-size:25px;font-weight:900;letter-spacing:1px}.brand span{color:var(--yellow)}
+nav{display:flex;gap:22px;align-items:center;font-size:14px}nav a:hover{color:var(--yellow)}.nav-cta{background:var(--yellow);color:#101a35;padding:10px 16px;border-radius:30px;font-weight:800}
+.hero{background:radial-gradient(circle at 80% 20%,#164cb3 0,#071638 55%);color:white;padding:72px 0 58px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:34px}.eyebrow{color:var(--cyan);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(38px,5.3vw,68px);line-height:1.04;margin:14px 0}h1 em{font-style:normal;color:var(--yellow)}.hero p{color:#d9e5ff;font-size:18px;line-height:1.65;max-width:600px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 20px;border-radius:12px;font-weight:800;border:0;cursor:pointer;font-size:15px}.primary{background:var(--yellow);color:#111a30}.secondary{border:1px solid #ffffff60;color:white;background:#ffffff10}
+.hero-img{width:100%;border-radius:18px;border:2px solid #ffffff35;box-shadow:0 22px 55px #0008}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:38px}.stat{padding:16px;border:1px solid #ffffff22;background:#ffffff0c;border-radius:12px;text-align:center}.stat strong{display:block;color:var(--yellow);font-size:21px}.stat span{font-size:12px;color:#dce5ff}
+section{padding:70px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 35px}.section-head h2{font-size:clamp(28px,4vw,42px);margin:0 0 12px;color:var(--navy)}.section-head p{color:var(--muted);line-height:1.65}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:white;border:1px solid #e2e9fa;border-radius:18px;padding:25px;box-shadow:0 10px 30px #183b7510}.service .icon{font-size:32px}.service h3{margin:13px 0 8px;font-size:21px}.service p{color:var(--muted);line-height:1.6}.price{color:var(--blue);font-weight:900;font-size:22px}
+.banner-section{background:#eaf1ff}.banner-img{width:100%;display:block;border-radius:18px;box-shadow:0 12px 35px #17356a22;margin:20px 0}
+.quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}.quick-grid img{width:100%;border-radius:16px}.steps{display:grid;gap:13px}.step{display:flex;gap:14px;align-items:center;background:white;padding:16px;border-radius:13px;border:1px solid #e4eaf7}.step b{background:var(--blue);color:white;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;flex-shrink:0}
+.enquiry{background:linear-gradient(135deg,#071638,#123d91);color:white}.enquiry .section-head h2{color:white}.enquiry .section-head p{color:#d2ddf5}.form-wrap{max-width:760px;margin:auto;background:white;color:var(--ink);padding:28px;border-radius:20px;box-shadow:0 15px 50px #0003}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-size:13px;font-weight:800}input,select,textarea{font:inherit;border:1px solid #d5deef;border-radius:10px;padding:13px;background:#fbfcff;outline-color:var(--blue);width:100%}textarea{resize:vertical;min-height:95px}.form-actions{grid-column:1/-1;display:flex;gap:12px;flex-wrap:wrap}.form-actions .btn{flex:1}.send-email{background:var(--blue);color:white}.send-wa{background:#16a34a;color:white}.fineprint{font-size:12px;color:#68738a;line-height:1.5;margin-top:12px}
+footer{background:#050f27;color:#d8e3ff;padding:28px 0}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.floating{position:fixed;right:18px;bottom:18px;z-index:9;display:flex;flex-direction:column;gap:10px}.floating a{padding:12px 15px;border-radius:30px;color:white;font-weight:800;box-shadow:0 6px 20px #0003}.float-wa{background:#16a34a}.float-call{background:#1264f3}
+@media(max-width:800px){.hero-grid,.quick-grid{grid-template-columns:1fr}.hero{padding-top:45px}.stats{grid-template-columns:repeat(2,1fr)}.services{grid-template-columns:1fr 1fr}nav{gap:12px}nav a:not(.nav-cta){display:none}}
+@media(max-width:540px){.services{grid-template-columns:1fr}.form-wrap{padding:18px}form{grid-template-columns:1fr}.field.full,.form-actions{grid-column:auto}.nav-cta{padding:9px 12px}.brand{font-size:21px}.hero p{font-size:16px}}
+</style>
+</head>
+<body>
+<header><div class="container nav"><a class="brand" href="#home">DG <span>INDIA</span></a><nav><a href="#services">Services</a><a href="#quick-order">Quick Order</a><a href="#enquiry">Enquiry</a><a class="nav-cta" href="#enquiry">Get Started</a></nav></div></header>
+<main>
+<section class="hero" id="home"><div class="container">
+<div class="hero-grid"><div><div class="eyebrow">Your Digital Growth Partner</div><h1>Take Your Business <em>Online.</em><br>Grow Beyond Limits.</h1><p>DG India helps businesses build a powerful digital presence with professional websites, mobile apps, Google SEO, Google Ads and quick-order systems for cafes, restaurants, hotels and more.</p><div class="actions"><a class="btn primary" href="#enquiry">🚀 Start Your Project</a><a class="btn secondary" href="https://wa.me/917039102251?text=Hello%20DG%20India%2C%20I%20want%20to%20know%20about%20your%20services." target="_blank" rel="noopener">💬 WhatsApp Us</a></div></div>
+<div><img class="hero-img" src="banner-website-app.png" alt="DG India website and app development banner" id="heroBanner"></div></div>
+<div class="stats"><div class="stat"><strong>Websites</strong><span>Professional & responsive</span></div><div class="stat"><strong>Mobile Apps</strong><span>Custom business solutions</span></div><div class="stat"><strong>Google SEO</strong><span>Improve online visibility</span></div><div class="stat"><strong>Quick Order</strong><span>Easy customer ordering</span></div></div>
+</div></section>
+<section id="services"><div class="container"><div class="section-head"><h2>Digital Services for Your Business</h2><p>Choose the service that matches your business goals. Submit an enquiry and DG India will contact you.</p></div>
+<div class="services">
+<div class="service"><div class="icon">🌐</div><h3>Static Website</h3><p>A clean, professional and mobile-friendly website to introduce your business online.</p><div class="price">Starting ₹1,999</div></div>
+<div class="service"><div class="icon">⚙️</div><h3>Dynamic Website</h3><p>Interactive website with dynamic content and useful business features.</p><div class="price">Starting ₹4,999</div></div>
+<div class="service"><div class="icon">📱</div><h3>Mobile App Development</h3><p>Custom Android/iOS app development based on your requirements and budget.</p><div class="price">As per requirement</div></div>
+<div class="service"><div class="icon">📈</div><h3>Google SEO Ranking</h3><p>SEO services to help your business improve search visibility and reach customers.</p><div class="price">Custom plan</div></div>
+<div class="service"><div class="icon">🎯</div><h3>Google Ads</h3><p>Campaign setup and digital advertising support to reach your target audience.</p><div class="price">Custom budget</div></div>
+<div class="service"><div class="icon">🛒</div><h3>Quick Order Facility</h3><p>QR-based digital menu and streamlined ordering for cafes, hotels and restaurants.</p><div class="price">Custom solution</div></div>
+</div></div></section>
+<section class="banner-section"><div class="container"><div class="section-head"><h2>Turn Your Ideas into a Powerful Digital Presence</h2><p>Affordable website and app solutions with a focus on business growth.</p></div><img class="banner-img" src="banner-website-app.png" alt="DG India website and app services banner"></div></section>
+<section id="quick-order"><div class="container quick-grid"><div><div class="eyebrow" style="color:#1264f3">For Hotels • Restaurants • Cafes</div><h2 style="font-size:38px;color:#071638">Introducing Quick Order Facility</h2><p style="color:#5c6680;line-height:1.7">Let customers scan a QR code, view your digital menu, add items to cart and place orders in seconds—helping your team serve more efficiently.</p><div class="steps"><div class="step"><b>1</b><span>Scan the QR code</span></div><div class="step"><b>2</b><span>Instantly view the digital menu</span></div><div class="step"><b>3</b><span>Add items to cart</span></div><div class="step"><b>4</b><span>Place an order directly</span></div></div><a class="btn primary" style="margin-top:20px" href="#enquiry">Enquire About Quick Order</a></div><img src="banner-quick-order.png" alt="DG India QR quick order facility banner"></div></section>
+<section class="enquiry" id="enquiry"><div class="container"><div class="section-head"><h2>Tell Us About Your Project</h2><p>Fill in your details and select the service you need. You can send the enquiry to email or WhatsApp.</p></div>
+<div class="form-wrap"><form id="enquiryForm">
+<div class="field"><label for="name">Your Name *</label><input id="name" name="name" placeholder="Enter your full name" required></div>
+<div class="field"><label for="email">Email ID *</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
+<div class="field"><label for="phone">Mobile Number *</label><input id="phone" name="phone" type="tel" pattern="[+]?[0-9 ()-]{10,16}" placeholder="Enter mobile number" required></div>
+<div class="field"><label for="service">Service Required *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Static Website (Starting ₹1,999)</option><option>Dynamic Website (Starting ₹4,999)</option><option>Mobile App Development</option><option>Google SEO Ranking</option><option>Google Ads</option><option>Quick Order Facility</option><option>Website + App Package</option><option>Other / Custom Requirement</option></select></div>
+<div class="field full"><label for="message">Project Details (optional)</label><textarea id="message" name="message" placeholder="Tell us briefly about your business and requirements"></textarea></div>
+<div class="form-actions"><button class="btn send-email" type="submit">✉️ Send Enquiry to Email</button><button class="btn send-wa" type="button" id="whatsappSubmit">💬 Send Enquiry on WhatsApp</button></div>
+</form><p class="fineprint">Email submission uses FormSubmit. The first submission may require email activation by the business owner. WhatsApp opens a pre-filled message for you to send. Your information is used to respond to this enquiry.</p></div></div></section>
+</main>
+<footer><div class="container foot"><div><strong>DG INDIA</strong><br>Digital solutions for business growth.</div><div>📞 <a href="tel:+917039102251">70391 02251</a> &nbsp; | &nbsp; ✉️ <a href="mailto:harshitmaurya317101@gmail.com">harshitmaurya317101@gmail.com</a></div><div>© <span id="year"></span> DG India</div></div></footer>
+<div class="floating"><a class="float-wa" href="https://wa.me/917039102251?text=Hello%20DG%20India%2C%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noopener">WhatsApp</a><a class="float-call" href="tel:+917039102251">Call Now</a></div>
+<script>
+const form=document.getElementById('enquiryForm');
+function getData(){return {name:document.getElementById('name').value.trim(),email:document.getElementById('email').value.trim(),phone:document.getElementById('phone').value.trim(),service:document.getElementById('service').value,message:document.getElementById('message').value.trim()}}
+function makeMessage(d){return `Hello DG India! I want to enquire about your service.%0A%0AName: ${encodeURIComponent(d.name)}%0AEmail: ${encodeURIComponent(d.email)}%0AMobile: ${encodeURIComponent(d.phone)}%0AService: ${encodeURIComponent(d.service)}%0AProject Details: ${encodeURIComponent(d.message||'Not provided')}`}
+document.getElementById('whatsappSubmit').addEventListener('click',()=>{if(!form.reportValidity())return;const d=getData();window.open('https://wa.me/917039102251?text='+makeMessage(d),'_blank','noopener')});
+form.addEventListener('submit',(e)=>{if(!form.reportValidity())return;e.preventDefault();const d=getData();const body=`New DG India Website Enquiry\\n\\nName: ${d.name}\\nEmail: ${d.email}\\nMobile: ${d.phone}\\nService: ${d.service}\\nProject Details: ${d.message||'Not provided'}`;const hidden=document.createElement('form');hidden.action='https://formsubmit.co/harshitmaurya317101@gmail.com';hidden.method='POST';hidden.target='_blank';[['name',d.name],['email',d.email],['phone',d.phone],['service',d.service],['message',d.message],['_subject','New Enquiry - DG India'],['_template','table'],['_captcha','false']].forEach(([k,v])=>{const i=document.createElement('input');i.type='hidden';i.name=k;i.value=v;hidden.appendChild(i)});document.body.appendChild(hidden);hidden.submit();hidden.remove();});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
